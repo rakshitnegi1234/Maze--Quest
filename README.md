@@ -77,18 +77,26 @@ g++ -o maze_game maze_game.cpp -lsfml-graphics -lsfml-window -lsfml-system
 This will create an executable file named maze_game.
 
 Directory Structure
+
 maze_game.cpp: The main C++ source code file containing the game logic.
 /fonts/ARIALBD.TTF: Custom font used for displaying instructions (ensure the font is available or replace it with any font you prefer).
+
 /README.md: Documentation describing how to use and compile the game.
 Instructions for Running the Game
 Generating and Solving the Maze:
+
 Generate a Maze: Click the 'G' key to generate a random maze. You will see a grid of walls and empty spaces.
 Set Start and End Points: Left-click to create walls or right-click to remove them. Set the start and end points by middle-clicking on two cells.
+
 Solve the Maze: Press 'S' to start solving the maze. The algorithm selected will try to find a path from the start to the end. If a path is found, it will be highlighted in different colors depending on the algorithm used.
-Additional Features & Future Improvements
+Additional Features & Future Improvements.
+
 Maze Generation Improvements: The current maze generation uses a simple recursive backtracking approach. More advanced maze generation algorithms like Prim’s Algorithm or Kruskal’s Algorithm could be added.
+
 Path Optimization: After solving the maze, the path could be optimized further or displayed with step-by-step visualization.
+
 User Interface Enhancements: Add a more intuitive interface for selecting the algorithms and displaying performance metrics (time taken, number of steps, etc.).
+
 Conclusion
 This project provides a fun and educational interactive maze solver with visualization of classic pathfinding algorithms. It helps users understand how A*, BFS, and DFS solve mazes and can be used as a foundation for further improvements and learning in pathfinding algorithms.
 
