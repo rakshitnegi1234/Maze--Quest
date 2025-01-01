@@ -1,29 +1,25 @@
-# Maze Game
+How It Works
+Maze Generation
+The maze is generated using a recursive backtracking algorithm, where the maze cells are visited randomly, and walls are placed dynamically. The algorithm ensures there is always a path from the start to the end.
 
-This project is a simple maze game implemented in C++. The game generates a random maze and allows the player to navigate through it to reach the exit. The player uses the 'w', 'a', 's', 'd' keys to move up, left, down, and right, respectively.
+Pathfinding Algorithms
+A Algorithm*: Finds the shortest path by combining the actual cost and heuristic (Manhattan distance).
+BFS Algorithm: Explores all possible paths level by level, guaranteeing the shortest path in an unweighted maze.
+DFS Algorithm: Explores paths recursively and backtracks when it reaches a dead end.
+Visualization
+The maze and solution paths are drawn using SFML. Different colors represent walls, paths, start, and end points, and the solution path based on the selected algorithm.
 
-## Features
+Event Handling
+The program handles mouse and keyboard inputs to allow maze manipulation and algorithm selection. Each input is processed in real-time to update the maze and paths.
 
-- Random maze generation
-- User-controlled character movement
-- Display of the maze with player's current position
-- Check for reaching the exit
+Dependencies
+This project requires SFML to compile and run. You can download it from SFML's official website.
 
-## How to Play
+Conclusion
+This maze game is an interactive way to visualize and compare the A*, BFS, and DFS algorithms. It can be used for learning how different pathfinding algorithms work and how they solve mazes in real time.
 
-1. Clone the repository or download the source code.
-2. Compile the code using a C++ compiler.
-3. Run the compiled executable.
-4. Use the following keys to move:
-    - 'w' to move up
-    - 'a' to move left
-    - 's' to move down
-    - 'd' to move right
-5. Navigate the maze to reach the exit.
 
-## Compilation
 
-To compile the code, you need a C++ compiler. For example, you can use g++:
 
-```sh
-g++ -o maze_game maze_game.cpp
+
+
